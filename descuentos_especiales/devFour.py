@@ -23,6 +23,7 @@ total = 0
 #Variable códigoName es correcto.
 if codigoEspecial == 's':
     codigoName = str(input("Ingresa Código: "))
+print()
 
 #En esta Super Estructura de condicional if y else-if's, evalua cada uno de los posibles
 #Descuentos suceptibles a la aplicación del monto de compra, tomando en cuenta las variables
@@ -43,52 +44,66 @@ if codigoEspecial == 's':
 #Condicional N° ( 1 )
 if montoCompra > 100 and esVip.lower() == 's' and codigoName == "UniSan":
     total = montoCompra - ((montoCompra * 0.2) + (montoCompra * 0.1) + (montoCompra * 0.05))
+    descuento = montoCompra * 0.2 + montoCompra * 0.1 + montoCompra * 0.05
 
-    print(f"Total: {montoCompra:,.2f}")
+    print(f"Total: {montoCompra:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| + 20% + 10% + 5% |: {total:,.2f} $")
 
 #Condicional N° ( 2 )
 elif montoCompra <= 100 and esVip.lower() == 's' and codigoName == "UniSan":
     total = montoCompra - ((montoCompra * 0.1) + (montoCompra * 0.05))
+    descuento = montoCompra * 0.1 + montoCompra * 0.05
 
-    print(f"Total: {montoCompra:,.2f}")
+    print(f"Total: {montoCompra:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| +10% + 5% |: {total:,.2f} $")
 
 #Condicional N° ( 3 )
 elif montoCompra <= 100 and esVip.lower() == 'n' and codigoName == "UniSan":
     total = montoCompra - (montoCompra * 0.05)
+    descuento = montoCompra * 0.05
 
-    print(f"Total: {montoCompra:,.2f}")
+    print(f"Total: {montoCompra:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| + 5% |: {total:,.2f} $")
 
 #Condicional N° ( 4 )
 elif montoCompra > 100 and esVip.lower() == 's' and codigoName != "UniSan":
     total = montoCompra - ((montoCompra * 0.2) + (montoCompra * 0.1))
+    descuento = montoCompra * 0.2 + montoCompra * 0.1
 
-    print(f"Total: {montoCompra:,.2f}")
+    print(f"Total: {montoCompra:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| + 20% + 10% |: {total:,.2f} $")
 
 #Condicional N° ( 5 )
 elif montoCompra > 100 and esVip.lower() == 'n' and codigoName == "UniSan":
     total = montoCompra - ((montoCompra * 0.2) + (montoCompra * 0.05))
+    descuento = montoCompra * 0.2 + montoCompra * 0.05
 
-    print(f"Total: {montoCompra:,.2f}")
+    print(f"Total: {montoCompra:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| + 20% + 5% |: {total:,.2f} $")
 
 #Condicional N° ( 6 )
 elif montoCompra > 100 and esVip.lower() == 'n' and codigoName != "UniSan":
     total = montoCompra - (montoCompra * 0.2)
+    descuento = montoCompra * 0.2
 
     print(f"Total: {montoCompra:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| +20% |: {total:,.2f} $")
 
 #Condicional N° ( 7 )
 elif montoCompra <= 100 and esVip.lower() == 's' and codigoName != "UniSan":
     total = montoCompra - (montoCompra * 0.1)
+    descuento = montoCompra * 0.1
 
     print(f"Total: {total:,.2f} $")
+    print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| + 10% |: {total:,.2f} $")
 
 #Salida Opcional
 else:
-    print(f"Total {montoCompra} | Sin descuento por ningun concepto.")
+    print(f"Total: {montoCompra:,.2f} $| Sin descuento por ningun concepto.")
