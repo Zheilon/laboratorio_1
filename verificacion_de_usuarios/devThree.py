@@ -26,6 +26,12 @@ if nivelAcceso == 5 and consulta <= 30 and actividadTargeta.lower() == 't':
 elif nivelAcceso == 0 and consulta > 30 and actividadTargeta.lower() == 'f':
     print("Acceso Denegado!")
 
+elif nivelAcceso == 0 and consulta <= 30 and actividadTargeta.lower() == 't':
+    print("Acceso Denegado!")
+
+elif nivelAcceso == 5 and consulta > 30 and actividadTargeta.lower() == 't':
+    print("Acceso Denegado!")
+
 #En este else, utilizado para cuando el usuario no halla ingresado alguno
 #de los campos correctamente. 
 else:
