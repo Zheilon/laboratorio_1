@@ -7,7 +7,7 @@ import math
 
 #En la variable radio se almacena el valor
 #ingresado por consola.
-radio = float(input("Ingrese radio del la pelota: "))
+radio = float(input("Ingrese radio de la pelota en Centimetros: "))
 
 #En la variable volumenPelota almacena el resultado de
 #la formula para hallar el volumen de la esfera -
@@ -16,4 +16,4 @@ volumenPelota = 4 / 3 * math.pi * math.pow(radio, 3)
 
 #Por medio de este print se imprime el resultado
 #de la variable volumenPelota.
-print(f"Volumen de la pelota: {volumenPelota}")
+print(f"Volumen de la pelota: {volumenPelota} Centimetros Cúbicos.")
