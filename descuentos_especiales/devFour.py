@@ -23,6 +23,9 @@ total = 0
 #Variable códigoName es correcto.
 if codigoEspecial == 's':
     codigoName = str(input("Ingresa Código: "))
+
+    if codigoName != "UniSan":
+        print("Código Incorrecto!")
 print()
 
 #En esta Super Estructura de condicional if y else-if's, evalua cada uno de los posibles
