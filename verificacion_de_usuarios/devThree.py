@@ -36,4 +36,3 @@ elif nivelAcceso == 5 and consulta > 30 and actividadTargeta.lower() == 't':
 #de los campos correctamente. 
 else:
     print("Ingrese indicación correcta!")
-
