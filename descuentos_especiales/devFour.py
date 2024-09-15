@@ -24,9 +24,6 @@ total = 0
 if codigoEspecial == 's':
     codigoName = str(input("Ingresa Código: "))
 
-elif codigoName != "UniSan":
-    print("Código Incorrecto!")
-
 #En esta Super Estructura de condicional if y else-if's, evalua cada uno de los posibles
 #Descuentos suceptibles a la aplicación del monto de compra, tomando en cuenta las variables
 #Que insiden en el problema - 
