@@ -1,0 +1,18 @@
+#Se implementan las librerias math.pi y math.pow
+#la primera nos ofrece el valor de PI
+#la segunda nos ayuda calcular la variable elevada al cubo.
+import math
+
+#En la variable radio se almacena el valor
+#ingresado por consola.
+radio = float(input("Ingrese radio del la pelota: "))
+
+#En la variable volumenPelota almacena el resultado de
+#la formula para hallar el volumen de la esfera -
+#4 / 3 * PI * radio^3.
+volumenPelota = 4 / 3 * math.pi * math.pow(radio, 3)
+
+print(f"Volumen de la pelota: {volumenPelota}")
+
+
+
