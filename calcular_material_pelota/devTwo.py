@@ -12,10 +12,6 @@ radio = float(input("Ingrese radio del la pelota: "))
 #4 / 3 * PI * radio^3.
 volumenPelota = 4 / 3 * math.pi * math.pow(radio, 3)
 
-
 #Por medio de este print se imprime el resultado
 #de la variable volumenPelota.
 print(f"Volumen de la pelota: {volumenPelota}")
-
-
-
