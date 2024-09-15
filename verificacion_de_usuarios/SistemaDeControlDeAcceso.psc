@@ -6,12 +6,12 @@ Proceso SistemaDeControlDeAcceso
     Leer nivelAcceso
     
     Definir consulta Como Entero
-    Escribir "Indique en días el último cambio que tuvo la contraseña de su tarjeta: "
+    Escribir "Indique en dÃ­as el Ãºltimo cambio que tuvo la contraseÃ±a de su tarjeta: "
     Leer consulta
     
  
     Definir actividadTarjeta Como Caracter
-    Escribir "¿Tarjeta de identificación ACTIVA? True = t / False = f: "
+    Escribir "Â¿Tarjeta de identificaciÃ³n ACTIVA? True = t / False = f: "
     Leer actividadTarjeta
     
  
@@ -22,7 +22,7 @@ Proceso SistemaDeControlDeAcceso
             Escribir "Acceso Denegado!"
         Sino
 
-            Escribir "Los valores ingresados con incorrectos!"
+            Escribir "Acceso denegado!"
         FinSi
     FinSi
 FinProceso
