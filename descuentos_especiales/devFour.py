@@ -30,6 +30,7 @@ elif codigoName != "UniSan":
 #En esta Super Estructura de condicional if y else-if's, evalua cada uno de los posibles
 #Descuentos suceptibles a la aplicación del monto de compra, tomando en cuenta las variables
 #Que insiden en el problema - 
+
 #Monto de Compra = (a) - ¿Es miembro VIP? = (b) - ¿Posee Código de Descuento? =(c).
 #Numero de combinaciones, Que se pueden cumplir.
 #1. | a - b - c |
@@ -39,6 +40,8 @@ elif codigoName != "UniSan":
 #5. | a |
 #6. | b |
 #7. | c |
+
+#Uso de métodos: lower() = retorna una cadena de caracteres en forma minúscula.
 
 #Condicional N° ( 1 )
 if montoCompra > 100 and esVip.lower() == 's' and codigoName == "UniSan":
@@ -69,7 +72,7 @@ elif montoCompra > 100 and esVip.lower() == 's' and codigoName != "UniSan":
     print(f"Total Descuento| + 20% + 10% |: {total:,.2f} $")
 
 #Condicional N° ( 5 )
-elif montoCompra > 100 and esVip.lower() == 's' and codigoName == "UniSan":
+elif montoCompra > 100 and esVip.lower() == 'n' and codigoName == "UniSan":
     total = montoCompra - ((montoCompra * 0.2) + (montoCompra * 0.05))
 
     print(f"Total: {montoCompra:,.2f}")
