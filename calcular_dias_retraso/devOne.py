@@ -1,3 +1,5 @@
+print(" ---------> Calcular porcentaje de días de retraso <---------\n")
+
 #En la variable diasRetraso se almacena el valor
 #ingresado por consola.
 diasRetraso = int(input("Ingrese Días de retraso: "))
