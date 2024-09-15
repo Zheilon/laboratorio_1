@@ -43,4 +43,4 @@ elif nivelAcceso == 5 and consulta <= 30 and actividadTargeta.lower() == 't':
 #En este else, utilizado para cuando el usuario no halla ingresado alguno
 #de los campos correctamente. 
 else:
-    print("Ingrese indicación correcta!")
+    print("los valores ingresados son incorrectos!")
