@@ -9,8 +9,7 @@ print()
 
 #La variable consulta almacena el valor que se ingresó.
 #por la consola.
-consulta = int(input('''Indique en días el último cambio que
-tuvo la contraseña de su targeta: '''))
+consulta = int(input('''Indique hace cuantos dias cambio la contraseña: '''))
 print()
 
 #La variable actividadTargeta almenacena un resultado de
@@ -43,4 +42,4 @@ elif nivelAcceso == 5 and consulta <= 30 and actividadTargeta.lower() == 't':
 #En este else, utilizado para cuando el usuario no halla ingresado alguno
 #de los campos correctamente. 
 else:
-    print("los valores ingresados son incorrectos!")
+    print("Acceso denegado!")
