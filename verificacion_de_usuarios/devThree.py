@@ -2,6 +2,8 @@ print(" ---------> Sistema de control de acceso <---------\n")
 
 #La variable nivelAcceso almacena el valor que se ingresó.
 #por la consola.
+print("Niveles de Acceso: ")
+print("Nivel ( 0 )\nNivel ( 5 )")
 nivelAcceso = int(input("Ingrese su nivel de acceso: "))
 print()
 
