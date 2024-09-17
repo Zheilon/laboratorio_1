@@ -103,7 +103,7 @@ elif montoCompra <= 100 and esVip.lower() == 's' and codigoName != "UniSan":
     total = montoCompra - (montoCompra * 0.1)
     descuento = montoCompra * 0.1
 
-    print(f"Total: {total:,.2f} $")
+    print(f"Total: {montoCompra:,.2f} $")
     print(f"Descuento: {descuento:,.2f} $")
     print(f"Total Descuento| + 10% |: {total:,.2f} $")
 
